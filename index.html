@@ -1,1280 +1,813 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Brendan & Lauren | 2022 Year in Review</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="2022 year in review website for Brendan & Lauren Berman">
-  <meta name="author" content="Brendan & Lauren Berman">
+    <title>Brendan & Lauren | 2022 Year in Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="2022 year in review website for Brendan & Lauren Berman"
+    />
+    <meta name="author" content="Brendan & Lauren Berman" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="194x194"
+      href="/favicon-194x194.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
-  
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    .card-img-cover-225 {
-      height: 250px;
-      overflow: hidden;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .slbIframeCont video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      max-height: 100%;
-      width: auto;
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
-    }
-  </style>
 
-</head>
-<body>
+      .card-img-cover-225 {
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
 
-  <header>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container d-inline-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          <strong>Berman Family 2022</strong>
-        </a>
-        <span>
-          <a href="/" class="px-3 text-white">Photos</a>
-        </span>
-      </div>
-    </div>
-  </header>
-  
-  <main>
-  
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Berman family 2022 year in review</h1>
-          <p class="lead text-muted">Each of the albums below have multiple photos or videos in them. Click the "View" button on the album to see the rest of the photos and videos!</p>
+      .slbIframeCont video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 100%;
+        width: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-inline-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Berman Family 2022</strong>
+          </a>
+          <span>
+            <a href="/" class="px-3 text-white">Photos</a>
+          </span>
         </div>
       </div>
-    </section>
-  
-    <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="album-cards">
-        </div>
-      </div>
-    </div>
-  
-  </main>
-  
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1">&copy; Brendan &amp; Lauren Berman, 2022</p>
-    </div>
-  </footer>
+    </header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <script src="dist/simpleLightbox.min.js"></script>
-
-  <script type="text/javascript">
-    function titleToClassName(title) {
-      title = title.toLowerCase();
-      // replace consecutive non-alphanumeric with a single dash
-      return title.replace(/[^a-z0-9]+/g, '-');
-    }
-
-    function renderImages() {
-      // setup lightbox options
-      SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
-      SimpleLightbox.defaults.beforeSetContent = function(contents, lightboxThis) {
-        const iframe = contents.querySelector('iframe');
-        if (!iframe) {
-          return;
-        }
-        // create video element
-        const video = document.createElement('video');
-        video.src = iframe.src;
-        video.autoplay = "true";
-        video.controls = "true";
-        video.width = '800';
-
-        // swap out for video element
-        iframe.parentElement.appendChild(video);
-        iframe.parentElement.removeChild(iframe);
-      };
-
-      let albumsHtml = '';
-      for (let album of IMAGES) {
-        const folder = album.folderName;
-        const description = album.description;
-        const date = album.date ? album.date : '';
-        const files = album.files;
-        if (files.length === 0) {
-          continue;
-        }
-        const className = titleToClassName(album.folderName);
-        const firstFile = files[0];
-        const html = `<div class="col" id="card-${className}">
-          <div class="card shadow-sm">
-            <div class="card-img-top card-img-cover-225" style="background-image: url('./img/${folder}/${firstFile.filename}');">
-            </div>
-
-            <div class="card-body">
-              <p class="card-text">${description}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View ${files.length} photos</button>
-                </div>
-                <small class="text-muted">${date}</small>
-              </div>
-            </div>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Berman family 2022 year in review</h1>
+            <p class="lead text-muted">
+              Each of the albums below have multiple photos or videos in them.
+              Click the "View" button on the album to see the rest of the photos
+              and videos!
+            </p>
           </div>
-        </div>`;
-        albumsHtml += html;
-      }
-      document.getElementById('album-cards').innerHTML = albumsHtml;
-      
-      // after attaching the photo albums to the DOM, we can attach the lightbox
-      for (let album of IMAGES) {
-        const className = titleToClassName(album.folderName);
-        document.querySelector('#card-' + className + ' button').addEventListener('click', function(e) {
-          // open the first image
-          const items = album.files.map(f => `./img/${album.folderName}/${f.filename}`);
-          SimpleLightbox.open({
-            items: items,
-          });
-        });
-      }
-    }
+        </div>
+      </section>
 
-const IMAGES = [
-  {
-    folderName: "2021_12_birding",
-    "description": "2021 Christmas Bird Count",
-    date: "Dec 2021",
-    "files":[
-      {
-        "filename":"20211218_162837.jpg",
-        "description":""
-      },
-      {
-        "filename":"6A2CB605-AAB4-4E23-8337-2435AAF88658.jpg",
-        "description":""
-      }
-    ]
-  },
-  /*
-  {
-    folderName: "Laurens Birthday Dinner",
-    "description": "We celebrated Lauren's birthday with a dinner party and a home-cooked meal by Brendan.",
-    date: "Jan 3",
-    "files":[
-      {
-        "filename":"IMG_9138.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9150.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9156.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9894.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9896.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9898.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9900.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9901.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9902.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9904.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9905.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9907.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Ski Trip with Family",
-    "description":"We went skiing with Lauren and Alex at Northstar on Lake Tahoe.",
-    date: "Feb",
-    "files":[
-      {
-        "filename":"IMG_0299.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0299.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0318.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0339.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0358.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_6437.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_6438.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_6441.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "London",
-    "description":"We took a quick weekend trip to London to visit Kru before she moved back to the US!",
-    date: "Feb 13-15",
-    "files":[
-      {
-        "filename":"0213201602.jpg",
-        "description":""
-      },
-      {
-        "filename":"0213202233_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0214200929.jpg",
-        "description":""
-      },
-      {
-        "filename":"0214200929e.jpg",
-        "description":""
-      },
-      {
-        "filename":"0214200934_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0214200939b.jpg",
-        "description":""
-      },
-      {
-        "filename":"0214201605_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0215202150_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201250.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201251.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201635_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201636_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201740_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0216201758a_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"37971220-DB87-4422-BCCB-17A491379E98.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0100.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0112.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0112.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0113.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0118.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0118.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0129.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0131.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0136.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0142.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0144.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0144.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0146.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0148.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0150.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0153.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0176.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0176.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0183.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0183.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0196.jpg",
-        "description":""
-      },
-      {
-        "filename":"a144a7b434f64aafa78cd7a4c8b03ec6.mp4",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "New Garden",
-    "description": "Very early into working from home we decided to plant a garden",
-    date: "March",
-    "files":[
-      {
-        "filename":"0314201727.jpg",
-        "description":""
-      },
-      {
-        "filename":"0314201727c.jpg",
-        "description":""
-      },
-      {
-        "filename":"0314201741.jpg",
-        "description":""
-      },
-      {
-        "filename":"0314201742c.jpg",
-        "description":""
-      },
-      {
-        "filename":"0314201742d.jpg",
-        "description":""
-      },
-      {
-        "filename":"0315201534.jpg",
-        "description":""
-      },
-      {
-        "filename":"0315201726.jpg",
-        "description":""
-      },
-      {
-        "filename":"0315201727c.jpg",
-        "description":""
-      },
-      {
-        "filename":"0315201736.jpg",
-        "description":""
-      },
-      {
-        "filename":"0315201736e.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0447.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0447.mp4",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Polar WFH Tech Support",
-    "description":"Early into working from home, Polar was having trouble adjusting to the new lifestyle. He needed some help from Brendan and Lauren...",
-    date: "March",
-    "files":[
-      {
-        "filename":"IMG_0459.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0460.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0461.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0523.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0543.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0566.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0566.mp4",
-        "description":""
-      }
-    ]
-  },
- {
-    folderName: "Zoom Tasting",
-    "description": "To break up the monotony early into sheltering in place, we planned a few Zoom wine tasting dates with friends.",
-    date: "April",
-    "files":[
-      {
-        "filename":"IMG_0930.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0935.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0938.jpg",
-        "description":""
-      }
-    ]
-  },
- {
-    folderName: "Dasher New Puppy",
-    "description":"We got a new puppy, Dasher!",
-    date: "May 18",
-    "files":[
-      {
-        "filename":"0520201852_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0524201033b.jpg",
-        "description":""
-      },
-      {
-        "filename":"0611200704b.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0251.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0253.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1165.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1168.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1206.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1208.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1243.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1266.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1318.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1320.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Patio Project",
-    "description":"Brendan decided to build a cobblestone patio in the side yard. It was successful and we now have ~300sqft of usable patio space!",
-    date: "June 12-19",
-    "files":[
-      {
-        "filename":"0612201242.jpg",
-        "description":""
-      },
-      {
-        "filename":"0612201242c.jpg",
-        "description":""
-      },
-      {
-        "filename":"0612201510.jpg",
-        "description":""
-      },
-      {
-        "filename":"0612201510a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0613201032_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0613201032a_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0613201043_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0614201157.jpg",
-        "description":""
-      },
-      {
-        "filename":"0614201158a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0615201057.jpg",
-        "description":""
-      },
-      {
-        "filename":"0615201704.jpg",
-        "description":""
-      },
-      {
-        "filename":"0615201704a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0618201859.jpg",
-        "description":""
-      },
-      {
-        "filename":"0618201859a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0618202023.jpg",
-        "description":""
-      },
-      {
-        "filename":"0628201729.jpg",
-        "description":""
-      },
-      {
-        "filename":"0628201730_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0628201730d_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0701200747a_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0729201332.jpg",
-        "description":""
-      },
-      {
-        "filename":"0729201332a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0729201333.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1385.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2343.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2343.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_2345.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Backpacking Trip near Tahoe",
-    description: "Soda Springs backpacking trip",
-    date: "June 19-21",
-    "files":[
-      {
-        "filename":"0619201831_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0619202117a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0619202117e.jpg",
-        "description":""
-      },
-      {
-        "filename":"0620202038b_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"0620202039b_HDR.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0008.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0014.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0017.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0023.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0026.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0044.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0158.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0160.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1401.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1401.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_1403.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1436.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1436.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_1445.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1445.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_1451.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1451.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_1481.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1481.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_1497.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1499.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_1527.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "First Dishes with Garden Produce",
-    description: "Our garden bloomed under Lauren's green thumb and we started to make dinners using some of our home-grown produce!",
-    date: "Summer",
-    "files":[
-      {
-        "filename":"IMG_0771.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0771.mp4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0784.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0787.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0791.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0796.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0797.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0798.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Anniversary Dinner",
-    description: "For our anniversary dinner, Brendan experimented with decorative culinary plating and fancy mushrooms",
-    date: "July 17",
-    "files":[
-      {
-        "filename":"0722201726.jpg",
-        "description":""
-      },
-      {
-        "filename":"61716443769__1626EC12-8284-4CBD-A450-C904C5C6DC5D.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2054.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2057.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2058.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2060.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Floating",
-    description: "Floating the Truckee river is a family tradition for us, and we didn't let the pandemic hold us back! Everyone got tested the week of the event to ensure we stayed safe.",
-    date: "July 24-27",
-    "files":[
-      {
-        "filename":"0724201309.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0012.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0016.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0019.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0038.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0085.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0121.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0137.MP4",
-        "description":""
-      },
-      {
-        "filename":"IMG_0150.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0164.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2148_Facetune_27-08-2020-21-09-11.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Pizza Making",
-    "description":"After purchasing a grill, we got into homemade Pizza. We've experimented some and our favorite is mushroom, sausage and honey drizzled on top.",
-    date: "Fall",
-    "files":[
-      {
-        "filename":"0824201820a_Original.jpg",
-        "description":""
-      },
-      {
-        "filename":"0828201949.jpg",
-        "description":""
-      },
-      {
-        "filename":"0828201949b.jpg",
-        "description":""
-      },
-      {
-        "filename":"0906201907.jpg",
-        "description":""
-      },
-      {
-        "filename":"0906201911.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_0822.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2285.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2291.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2619.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Beard to Stashe",
-    description: "Beard to Stashe",
-    date: "Aug - Dec",
-    "files":[
-      {
-        "filename":"0905202105.jpg",
-        "description":""
-      },
-      {
-        "filename":"0905202106a.jpg",
-        "description":""
-      },
-      {
-        "filename":"0905202341a.jpg",
-        "description":""
-      }
-    ]
-  },
- {
-    folderName: "Family Visiting",
-    description: "Brendan's family visited from the east coast, driving nearly 48h straight each way (yes, really)!",
-    date: "October",
-    "files":[
-      {
-        "filename":"1024200858j.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2565.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2611.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2616.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9477.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_9483.jpg",
-        "description":""
-      }
-    ]
-  },
- {
-    folderName: "Halloween Costumes",
-    "description":"Even though we under quarantine, we still got dressed up for Halloween 👻",
-    date: "Oct 31",
-    "files":[
-      {
-        "filename":"IMG_2851.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_2879.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "Holiday Shoot",
-    "description":"Pictures from our holiday photoshoot. Shoutout to our friend Camille, the photographer 📸",
-    date: "November",
-    "files":[
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-100.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-101.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-102.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-103.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-104.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-105.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-106.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-107.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-108.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-109.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-110.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-111.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-112.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-113.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-114.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-115.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-116.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-117.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-118.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-119.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-120.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-121.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-122.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-123.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-124.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-125.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-126.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-127.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-128-2.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-128.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-129.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-130.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-131.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-132.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-133.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-134.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-135.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-136.jpg",
-        "description":""
-      },
-      {
-        "filename":"Berman_Holiday2020_Insta_Camizzleful-137.jpg",
-        "description":""
-      }
-    ]
-  },
-  {
-    folderName: "San Diego",
-    "description":"We took a roadtrip down to San Diego with our 'pod' Chris & Aaron, enjoying the beaches and some new restaurants.",
-    date: "Early December",
-    "files":[
-      {
-        "filename":"1204201953a.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3061.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3079.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3082.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3090.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3098.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3104.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3109.jpg",
-        "description":""
-      },
-      {
-        "filename":"IMG_3113.jpg",
-        "description":""
-      }
-    ]
-  },*/
-];
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            id="album-cards"
+          ></div>
+        </div>
+      </div>
+    </main>
 
-    renderImages();
-  </script>
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; Brendan &amp; Lauren Berman, 2022</p>
+      </div>
+    </footer>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/simpleLightbox.min.js"></script>
+
+    <script type="text/javascript">
+      function titleToClassName(title) {
+        title = title.toLowerCase();
+        // replace consecutive non-alphanumeric with a single dash
+        return title.replace(/[^a-z0-9]+/g, "-");
+      }
+
+      function renderImages() {
+        // setup lightbox options
+        SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
+        SimpleLightbox.defaults.beforeSetContent = function (
+          contents,
+          lightboxThis
+        ) {
+          const iframe = contents.querySelector("iframe");
+          if (!iframe) {
+            return;
+          }
+          // create video element
+          const video = document.createElement("video");
+          video.src = iframe.src;
+          video.autoplay = "true";
+          video.controls = "true";
+          video.width = "800";
+
+          // swap out for video element
+          iframe.parentElement.appendChild(video);
+          iframe.parentElement.removeChild(iframe);
+        };
+
+        let albumsHtml = "";
+        for (let album of IMAGES) {
+          const folder = album.folderName;
+          const description = album.description;
+          const date = album.date ? album.date : "";
+          const files = album.files;
+          if (files.length === 0) {
+            continue;
+          }
+          const className = titleToClassName(album.folderName);
+          const firstFile = files[0];
+          const html = `<div class="col" id="card-${className}">
+                <div class="card shadow-sm">
+                  <div class="card-img-top card-img-cover-225" style="background-image: url('./img/${folder}/${firstFile.filename}');">
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">${description}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View ${files.length} photos</button>
+                      </div>
+                      <small class="text-muted">${date}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+          albumsHtml += html;
+        }
+        document.getElementById("album-cards").innerHTML = albumsHtml;
+
+        // after attaching the photo albums to the DOM, we can attach the lightbox
+        for (let album of IMAGES) {
+          const className = titleToClassName(album.folderName);
+          document
+            .querySelector("#card-" + className + " button")
+            .addEventListener("click", function (e) {
+              // open the first image
+              const items = album.files.map(
+                (f) => `./img/${album.folderName}/${f.filename}`
+              );
+              SimpleLightbox.open({
+                items: items,
+              });
+            });
+        }
+      }
+
+      const IMAGES = [
+        {
+          folderName: "2021_12_birding",
+          description: "2021 Christmas Bird Count",
+          date: "Dec 2021",
+          files: [
+            {
+              filename: "20211218_162837.jpg",
+              description: "",
+            },
+            {
+              filename: "6A2CB605-AAB4-4E23-8337-2435AAF88658.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2021_12_alabama",
+          description: "We visited Chris & Aaron in Alabama, then visited the southern coast of the US together",
+          date: "Dec 2021",
+          files: [
+            {
+              filename: "20211229_164817.jpg",
+              description: "",
+            },
+            {
+              filename: "20211230_141722.jpg",
+              description: "",
+            },
+            {
+              filename: "20211230_141840~2.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_1_birthday",
+          description: "Lauren's Birthday was celebraded with a home-cooked meal by the husbands & boyfriends of the ladies who attended",
+          date: "Jan 2022",
+          files: [
+            {
+              filename: "IMG_1200.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1217.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1222.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1717.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1719.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1720.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1731.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_1_skiing",
+          description: "We did a quick January ski trip in Lake Tahoe. Dasher enjoyed the snow, and we enjoyed skiing at Northstar",
+          date: "Jan 2022",
+          files: [
+            {
+              filename: "20220104_113708.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1671_jpg.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1676.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1689.heic.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_2_colorado",
+          description: "We did a weeklong roadtrip out to Colorado for skiing! We pit stopped in Salt Lake City for a day of skiing on our way out :D",
+          date: "Feb 2022",
+          files: [
+            {
+              filename: "20220209_135142.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1818.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1825.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1832.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1860.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1870.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1882.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1889.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1897.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_2_valentines",
+          description: "Valentines Day dinner at Lazy Bear in SF",
+          date: "Feb 2022",
+          files: [
+            {
+              filename: "IMG_1914.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1917.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1919.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1921.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_1923.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_3_mendocino",
+          description: "Brendan's family visited town and we took a trip to Mendocino, a few hours north of SF along the coast",
+          date: "Spring 2022",
+          files: [
+            {
+              filename: "IMG_2017.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2020.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_6165.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_6175.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_6184.heic.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_4_hawaii",
+          description: "We spent 2 weeks in Hawaii, with lots of hiking and lots of relaxing across two islands",
+          date: "April 2022",
+          files: [
+            {
+              filename: "20220412_075921.jpg",
+              description: "",
+            },
+            {
+              filename: "20220417_094029.jpg",
+              description: "",
+            },
+            {
+              filename: "20220418_172338.jpg",
+              description: "",
+            },
+            {
+              filename: "20220418_183256.jpg",
+              description: "",
+            },
+            {
+              filename: "20220419_173308.jpg",
+              description: "",
+            },
+            {
+              filename: "20220420_110652.jpg",
+              description: "",
+            },
+            {
+              filename: "20220422_184033.jpg",
+              description: "",
+            },
+            {
+              filename: "GOPR0033_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0034_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0071_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0075_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0086_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0124_ALTA1815492683175231203_Original.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0126_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0131_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0139_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0170_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0186_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0200_ALTA1815492683175231203.JPG",
+              description: "",
+            },
+            {
+              filename: "IMG_2157.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2164.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2169.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2185.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2191.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2199.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2202.heic.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2210.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2234.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2247.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2268.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2355.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2374.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2399.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2402.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2408(1).jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2697.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_5_bottle_rock",
+          description: "Bottle Rock Music Festival",
+          date: "May 2022",
+          files: [
+            {
+              filename: "20220527_211522.jpg",
+              description: "",
+            },
+            {
+              filename: "20220528_131608.jpg",
+              description: "",
+            },
+            {
+              filename: "67540274994__5C1B9BEA-9FB3-4002-9A28-7E10D72C19A4.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2860.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2885(1).jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_5_chicago",
+          description: "Brendan spent a week in Chicago for work",
+          date: "May 2022",
+          files: [
+            {
+              filename: "20220516_195451.jpg",
+              description: "",
+            },
+            {
+              filename: "20220517_211217.jpg",
+              description: "",
+            },
+            {
+              filename: "20220517_213337.jpg",
+              description: "",
+            },
+            {
+              filename: "20220517_213427.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_5_mothers_day",
+          description: "Mothers Day brunch with Christy!",
+          date: "May 2022",
+          files: [
+            {
+              filename: "20220508_113110.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_2780.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_6700.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_6_grand_canyon",
+          description: "We did a long weekend trip to the Grand Canyon - we backpacked down and stayed overnight in our tent at the bottom!",
+          date: "June 2022",
+          files: [
+            {
+              filename: "20220617_180406.jpg",
+              description: "",
+            },
+            {
+              filename: "GOPR0298_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0306_1656269866425(1).JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0309_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0316_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0321_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0327_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "GOPR0347_1656269866425.JPG",
+              description: "",
+            },
+            {
+              filename: "IMG_2986.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3013.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3024.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_6_jeep",
+          description: "Brendan got a new Jeep! It dresses up sometimes ;)",
+          date: "June 2022",
+          files: [
+            {
+              filename: "20220601_134121.jpg",
+              description: "",
+            },
+            {
+              filename: "20220604_095629.jpg",
+              description: "",
+            },
+            {
+              filename: "20220703_112135.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3098.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3108.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3192.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3213.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3233.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_7_disney",
+          description: "Disneyland trip for the 50th aniversary of the Mainstreet Electrical Light Parade",
+          date: "Aug 2022",
+          files: [
+            {
+              filename: "20220730_205731.jpg",
+              description: "",
+            },
+            {
+              filename: "20220730_205948.jpg",
+              description: "",
+            },
+            {
+              filename: "20220730_211644.jpg",
+              description: "",
+            },
+            {
+              filename: "183434845_HIGH.jpg",
+              description: "",
+            },
+            {
+              filename: "183464137_HIGH.jpg",
+              description: "",
+            },
+            {
+              filename: "183481649_HIGH.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3303.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_3309.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_9_shows",
+          description: "We attended many plays & musicals this year, including Oklahoma, Moulin Rouge, To Kill a Mockingbird",
+          date: "Summer/Fall 2022",
+          files: [
+            {
+              filename: "20220824_193040.jpg",
+              description: "",
+            },
+            {
+              filename: "20221025_190433.jpg",
+              description: "",
+            },
+          ],
+        },
+        {
+          folderName: "2022_11_thanksgiving",
+          description: "Thanksgiving",
+          date: "Nov 2022",
+          files: [
+            {
+              filename: "20221124_174454.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_4472.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_4473.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_4479.jpg",
+              description: "",
+            },
+            {
+              filename: "IMG_4485.jpg",
+              description: "",
+            },
+          ],
+        },
+      ];
+
+      renderImages();
+    </script>
+  </body>
 </html>
