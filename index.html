@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="2022 year in review website for Brendan & Lauren Berman"
+      content="2023 year in review website for Brendan & Lauren Berman"
     />
     <meta name="author" content="Brendan & Lauren Berman" />
 
@@ -180,7 +180,7 @@
         let albumsHtml = "";
         for (let album of IMAGES) {
           const folder = album.folderName;
-          const description = album.description.replace(new RegExp('~(.+)~'), '<s>$1</s>');
+          const description = album.description.replace(new RegExp('~~(.+)~~'), '<s>$1</s>');
           const date = album.date ? album.date : "";
           const files = album.files;
           if (files.length === 0) {
@@ -420,7 +420,7 @@
         },
         {
           folderName: "2023_05_baby_showers",
-          description: "May ~Flowers~ Baby Showers",
+          description: "May ~~Flowers~~ Baby Showers",
           date: "May 2023",
           files: [
             {
