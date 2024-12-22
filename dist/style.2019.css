@@ -1,0 +1,90 @@
+.no-js, .enable-js {
+    display: none;
+}
+
+.no-js .enable-js {
+    display: block;
+}
+
+* {
+    font-family: 'Palatino', 'Georgia', serif;
+    color: #334;
+}
+
+h1, h2, h3 {
+    display: block;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+/*
+Grid Masonry
+*/
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: 20px;
+    padding: 20px;
+}
+
+/*
+Collections
+*/
+.collection {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: #aaa 0px 0px 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.collection:hover {
+    box-shadow: #aaa 0px 0px 12px, #aaa 0px 0px 8px;;
+}
+/* 
+.collection-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.collection-image:hover:before {
+    content: 'Click for more pictures';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+} */
+
+.collection-image img {
+    max-width: 100%;
+}
+
+.collection-description {
+    padding-top: 5px;
+}
+
+.collection-description--title {
+    font-size: 1.5em;
+}
+
+.lightbox-links {
+    display: none;
+}
