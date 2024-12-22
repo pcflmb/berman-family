@@ -109,10 +109,9 @@
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Berman family 2024 year in review</h1>
             <p class="lead text-muted">
-              <!-- Each of the albums below have multiple photos or videos in them.
+              Each of the albums below have multiple photos or videos in them.
               Click the "View" button on the album to see the rest of the photos
-              and videos! -->
-              Photos are being uploaded, please check back on December 22nd!
+              and videos!
             </p>
           </div>
         </div>
@@ -218,39 +217,160 @@
         }
       }
 
+      function buildFolder(folder, description, date, files) {
+        return { folderName: folder, description: description, date: date, files: files}
+      }
+
+      function buildImg(path, description) {
+        return { filename: path, description: description || '' };
+      }
+
       const IMAGES = [
-        // {
-        //   folderName: "2023_01_birthday_and_holidays",
-        //   description: "Holidays & Birthdays",
-        //   date: "Dec 2022 - Jan 2023",
-        //   files: [
-        //     {
-        //       filename: "20221229_190451.jpeg",
-        //       description: "",
-        //     },
-        //     {
-        //       filename: "20230103_162703.jpeg",
-        //       description: "",
-        //     },
-        //     {
-        //       filename: "20230103_162750.jpeg",
-        //       description: "",
-        //     },
-        //     {
-        //       filename: "20230103_184137.jpeg",
-        //       description: "",
-        //     },
-        //     {
-        //       filename: "20230103_184147.jpeg",
-        //       description: "",
-        //     },
-        //     {
-        //       filename: "IMG_4088.jpeg",
-        //       description: "",
-        //     },
-        //   ],
-        // },
-        
+
+        buildFolder("2023_12_firehouse", "Firehouse visit", "Dec 2023", [
+          buildImg("IMG_2066.heif.jpg", ""),
+          buildImg("IMG_2110.heif.jpg", ""),
+          buildImg("IMG_2113.heif.jpg", ""),
+          buildImg("IMG_2120.heif.jpg", ""),
+        ]),
+
+        buildFolder("2023_12_holiday_photos", "Holiday Parties", "Dec 2023", [
+          buildImg("IMG_2188.heif.jpg", ""),
+          buildImg("20231231_183945.jpg", ""),
+          buildImg("IMG_2313.heif.jpg", ""),
+          buildImg("PXL_20240101_010832359.PORTRAIT_Original.jpg", ""),
+        ]),
+
+        buildFolder("2024_01_swimming_and_zoo", "New Weekly Activities", "Q1 2024", [
+          buildImg("20240111_121858.jpg", ""),
+          buildImg("20240111_130608.jpg", ""),
+          buildImg("20240115_141259.jpg", ""),
+          buildImg("20240118_134233.jpg", ""),
+          buildImg("20240125_155047.jpg", ""),
+          buildImg("20240127_140637.jpg", ""),
+          buildImg("20240127_141207.jpg", ""),
+          buildImg("20240127_142734(0).jpg", ""),
+          buildImg("IMG_2590.heif.jpg", ""),
+          buildImg("IMG_2593.heif.jpg", ""),
+          buildImg("20240104_154145.jpg", ""),
+          buildImg("20240108_132734.jpg", ""),
+          buildImg("20240108_141934.jpg", ""),
+        ]),
+
+        buildFolder("2024_02_food", "Trying real food", "Feb onwards", [
+          buildImg("20240128_154904.jpg", ""),
+          buildImg("20240128_154940.jpg", ""),
+          buildImg("20240306_115717.jpg", ""),
+          buildImg("20240306_115723_Original(1).jpg", ""),
+          buildImg("20240309_175938.jpg", ""),
+          buildImg("20240309_180151.jpg", ""),
+          buildImg("IMG_2776.heif.jpg", ""),
+          buildImg("IMG_2917.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_03_i_love_dasher", "I ❤️ Dasher", "", [
+          buildImg("IMG_2905.heif.jpg", ""),
+          buildImg("IMG_3588.mov", ""),
+        ]),
+
+        buildFolder("2024_04_daycare", "Starting daycare", "April 2024", [
+          buildImg("2024-03-26_23_39_31.898000(1).jpg", ""),
+          buildImg("2024-03-27_20_46_33.253000(1).jpg", ""),
+          buildImg("2024-03-28_20_34_28.899000(1).jpg", ""),
+          buildImg("2024-04-10_19_42_37.968000.jpg", ""),
+          buildImg("2024-08-07_17_51_10.216000.jpg", ""),
+          buildImg("20240402_parker_music2(1).jpg", ""),
+          buildImg("IMG_20240402_170234943.jpg", ""),
+        ]),
+
+        buildFolder("2024_04_easter", "Easter", "", [
+          buildImg("IMG_2969.heif.jpg", ""),
+          buildImg("IMG_2976.heif.jpg", ""),
+          buildImg("IMG_2985.heif.jpg", ""),
+          buildImg("IMG_3307.heif.jpg", ""),
+          buildImg("IMG_3337.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_05_gymnastics", "Gymnastic classes", "started in May", [
+          buildImg("20240526_083419.jpg", ""),
+          buildImg("20240526_084214.jpg", ""),
+          buildImg("20240526_084222(0).jpg", ""),
+          buildImg("20240526_085246.jpg", ""),
+          buildImg("20240609_084535.jpg", ""),
+        ]),
+
+        buildFolder("2024_06_carmel_wedding", "Monterey & Carmel Wedding", "June 2024", [
+          buildImg("20240629_171745.jpg", ""),
+          buildImg("20240629_190628.jpg", ""),
+          buildImg("20240629_190735.jpg", ""),
+          buildImg("IMG_3499.heif.jpg", ""),
+          buildImg("IMG_3502.heif.jpg", ""),
+          buildImg("IMG_3503.heif.jpg", ""),
+          buildImg("IMG_3509.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_07_giants_game", "Giants baseball game", "July 2024", [
+          buildImg("IMG_1262.heif.jpg", ""),
+          buildImg("IMG_1266.heif.jpg", ""),
+          buildImg("IMG_1281.heif.jpg", ""),
+          buildImg("IMG_3731.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_08_birthday", "Parker 1st birthday", "Aug 2024", [
+          buildImg("20240813_190635.jpg", ""),
+          buildImg("20240817_121535.jpg", ""),
+          buildImg("IMG_3839.heif.jpg", ""),
+          buildImg("IMG_6046.heif.jpg", ""),
+          buildImg("IMG_6082.jpg", ""),
+          buildImg("IMG_6085.jpg", ""),
+          buildImg("IMG_7713.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_09_camping", "Camping trip 🏕️", "Sept 2024", [
+          buildImg("20240906_182551.jpg", ""),
+          buildImg("20240906_182855.jpg", ""),
+          buildImg("20240907_123131.jpg", ""),
+          buildImg("20240907_141213.jpg", ""),
+          buildImg("20240907_141445(1).jpg", ""),
+          buildImg("20240907_150753.jpg", ""),
+          buildImg("IMG_3920.heif.jpg", ""),
+          buildImg("IMG_3946(1).heif.jpg", ""),
+          buildImg("IMG_3960(1).heif.jpg", ""),
+          buildImg("IMG_3968.heif.jpg", ""),
+        ]),
+
+        buildFolder("2024_10_halloween", "Halloween", "Oct 2024", [
+          buildImg("20241031_174405.jpg", ""),
+          buildImg("20241031_174444.jpg", ""),
+          buildImg("IMG_4236.heif.jpg", ""),
+          buildImg("IMG_6219.heif.jpg", ""),
+          buildImg("IMG_6220.heif.jpg", ""),
+          buildImg("IMG_6222.heic.jpg", ""),
+        ]),
+
+        buildFolder("2024_11_disney", "Disneyland!", "Nov 2024", [
+          buildImg("20241112_173620.jpg", ""),
+          buildImg("20241112_173626.jpg", ""),
+          buildImg("20241113_070909.jpg", ""),
+          buildImg("20241113_075238_Original.jpg", ""),
+          buildImg("20241113_101057.jpg", ""),
+          buildImg("20241113_103237.jpg", ""),
+          buildImg("20241115_103132.jpg", ""),
+          buildImg("20241115_103809.jpg", ""),
+          buildImg("IMG_4307.heif.jpg", ""),
+          buildImg("IMG_4309.heif.jpg", ""),
+          buildImg("IMG_4314.heif.jpg", ""),
+          buildImg("IMG_4319.heif.jpg", ""),
+          buildImg("IMG_4331.heif.jpg", ""),
+          buildImg("IMG_4335.jpg", ""),
+          buildImg("IMG_4337.jpg", ""),
+          buildImg("IMG_4339.heif.jpg", ""),
+          buildImg("IMG_4346.heif.jpg", ""),
+          buildImg("IMG_4364.heif.jpg", ""),
+          buildImg("IMG_4375.heif.jpg", ""),
+          buildImg("IMG_4379.heif.jpg", ""),
+        ]),
+
       ];
 
       renderImages();
