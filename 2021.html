@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Brendan & Lauren | 2021 Year in Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="2021 year in review website for Brendan & Lauren Berman"
+    />
+    <meta name="author" content="Brendan & Lauren Berman" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="194x194"
+      href="/favicon-194x194.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="dist/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
+
+    <style>
+      .hover-dropdown > div {
+        display: none;
+      }
+      .hover-dropdown:hover > div,
+      .hover-dropdown:focus > div {
+        display: block;
+      }
+      .hover-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hover-dropdown > div {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 15rem;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hover-dropdown > div > a {
+        display: block;
+        padding: 5px 10px;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .card-img-cover-225 {
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .slbIframeCont video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 100%;
+        width: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-inline-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Berman Family 2021</strong>
+          </a>
+          <span>
+            <a href="/2025" class="px-3 text-white">2025</a>
+            <a href="/2024" class="px-3 text-white">2024</a>
+            <a href="/2023" class="px-3 text-white">2023</a>
+            <a href="/2022" class="px-3 text-white">2022</a>
+            <div id="older-photo-sites" class="hover-dropdown">
+              <span class="px-3 text-white">Past years ▼</span>
+              <div>
+                <a href="#" class="px-3 text-white">2021</a>
+                <a href="/2020" class="px-3 text-white">2020</a>
+                <a href="/donations2020" class="px-3 text-white"
+                  >Donations 2020</a
+                >
+                <a href="/2019" class="px-3 text-white">2019</a>
+                <a href="/2018" class="px-3 text-white">2018</a>
+                <a href="/2017" class="px-3 text-white">2017</a>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">
+              Berman family 2021 year in review, IS MISSING 😱
+            </h1>
+            <p class="lead text-muted">
+              We'll hopefully recover the photos shared in 2021 soon!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            id="album-cards"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; Brendan &amp; Lauren Berman, 2021</p>
+      </div>
+    </footer>
+
+    <script src="dist/bootstrap.bundle.min.js"></script>
+    <script src="dist/simpleLightbox.min.js"></script>
+
+    <script type="text/javascript">
+      function titleToClassName(title) {
+        title = title.toLowerCase();
+        // replace consecutive non-alphanumeric with a single dash
+        return title.replace(/[^a-z0-9]+/g, "-");
+      }
+
+      function renderImages() {
+        // setup lightbox options
+        SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
+        SimpleLightbox.defaults.beforeSetContent = function (
+          contents,
+          lightboxThis,
+        ) {
+          const iframe = contents.querySelector("iframe");
+          if (!iframe) {
+            return;
+          }
+          // create video element
+          const video = document.createElement("video");
+          video.src = iframe.src;
+          video.autoplay = "true";
+          video.controls = "true";
+          video.width = "800";
+
+          // swap out for video element
+          iframe.parentElement.appendChild(video);
+          iframe.parentElement.removeChild(iframe);
+        };
+
+        let albumsHtml = "";
+        for (let album of IMAGES) {
+          const folder = album.folderName;
+          const description = album.description.replace(
+            new RegExp("~~(.+)~~"),
+            "<s>$1</s>",
+          );
+          const date = album.date ? album.date : "";
+          const files = album.files;
+          if (files.length === 0) {
+            continue;
+          }
+          const className = titleToClassName(album.folderName);
+          const firstFile = files[0];
+          const html = `<div class="col" id="card-${className}">
+                <div class="card shadow-sm">
+                  <div class="card-img-top card-img-cover-225" style="background-image: url('./img/${folder}/${firstFile.filename}');">
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">${description}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View ${files.length} photos</button>
+                      </div>
+                      <small class="text-muted">${date}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+          albumsHtml += html;
+        }
+        document.getElementById("album-cards").innerHTML = albumsHtml;
+
+        // after attaching the photo albums to the DOM, we can attach the lightbox
+        for (let album of IMAGES) {
+          const className = titleToClassName(album.folderName);
+          document
+            .querySelector("#card-" + className + " button")
+            .addEventListener("click", function (e) {
+              // open the first image
+              const items = album.files.map(
+                (f) => `./img/${album.folderName}/${f.filename}`,
+              );
+              SimpleLightbox.open({
+                items: items,
+              });
+            });
+        }
+      }
+
+      function buildFolder(folder, description, date, files) {
+        return {
+          folderName: folder,
+          description: description,
+          date: date,
+          files: files,
+        };
+      }
+
+      function buildImg(path, description) {
+        return { filename: path, description: description || "" };
+      }
+
+      const IMAGES = [];
+
+      renderImages();
+    </script>
+  </body>
+</html>
