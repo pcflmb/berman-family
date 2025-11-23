@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Brendan & Lauren | 2025 Year in Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="2023 year in review website for Brendan & Lauren Berman"
+    />
+    <meta name="author" content="Brendan & Lauren Berman" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="194x194"
+      href="/favicon-194x194.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="dist/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
+
+    <style>
+      .hover-dropdown > div {
+        display: none;
+      }
+      .hover-dropdown:hover > div,
+      .hover-dropdown:focus > div {
+        display: block;
+      }
+      .hover-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hover-dropdown > div {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 15rem;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hover-dropdown > div > a {
+        display: block;
+        padding: 5px 10px;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .card-img-cover-225 {
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .slbIframeCont video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 100%;
+        width: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-inline-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Berman Family 2025</strong>
+          </a>
+          <span>
+            <a href="#" class="px-3 text-white">2025</a>
+            <a href="/2024" class="px-3 text-white">2024</a>
+            <a href="/2023" class="px-3 text-white">2023</a>
+            <a href="/2022" class="px-3 text-white">2022</a>
+            <div id="older-photo-sites" class="hover-dropdown">
+              <span class="px-3 text-white">Past years ▼</span>
+              <div>
+                <a href="/2021" class="px-3 text-white">2021</a>
+                <a href="/2020" class="px-3 text-white">2020</a>
+                <a href="/donations2020" class="px-3 text-white"
+                  >Donations 2020</a
+                >
+                <a href="/2019" class="px-3 text-white">2019</a>
+                <a href="/2018" class="px-3 text-white">2018</a>
+                <a href="/2017" class="px-3 text-white">2017</a>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Berman family 2025 year in review</h1>
+            <p class="lead text-muted">
+              Each of the albums below have multiple photos or videos in them.
+              Click the "View" button on the album to see the rest of the photos
+              and videos!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            id="album-cards"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; Brendan &amp; Lauren Berman, 2025</p>
+      </div>
+    </footer>
+
+    <script src="dist/bootstrap.bundle.min.js"></script>
+    <script src="dist/simpleLightbox.min.js"></script>
+
+    <script type="text/javascript">
+      function titleToClassName(title) {
+        title = title.toLowerCase();
+        // replace consecutive non-alphanumeric with a single dash
+        return title.replace(/[^a-z0-9]+/g, "-");
+      }
+
+      function renderImages() {
+        // setup lightbox options
+        SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
+        SimpleLightbox.defaults.beforeSetContent = function (
+          contents,
+          lightboxThis,
+        ) {
+          const iframe = contents.querySelector("iframe");
+          if (!iframe) {
+            return;
+          }
+          // create video element
+          const video = document.createElement("video");
+          video.src = iframe.src;
+          video.autoplay = "true";
+          video.controls = "true";
+          video.width = "800";
+
+          // swap out for video element
+          iframe.parentElement.appendChild(video);
+          iframe.parentElement.removeChild(iframe);
+        };
+
+        let albumsHtml = "";
+        for (let album of IMAGES) {
+          const folder = album.folderName;
+          const description = album.description.replace(
+            new RegExp("~~(.+)~~"),
+            "<s>$1</s>",
+          );
+          const date = album.date ? album.date : "";
+          const files = album.files;
+          if (files.length === 0) {
+            continue;
+          }
+          const className = titleToClassName(album.folderName);
+          const firstFile = files[0];
+          const html = `<div class="col" id="card-${className}">
+                <div class="card shadow-sm">
+                  <div class="card-img-top card-img-cover-225" style="background-image: url('./img/${folder}/${firstFile.filename}');">
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">${description}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View ${files.length} photos</button>
+                      </div>
+                      <small class="text-muted">${date}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+          albumsHtml += html;
+        }
+        document.getElementById("album-cards").innerHTML = albumsHtml;
+
+        // after attaching the photo albums to the DOM, we can attach the lightbox
+        for (let album of IMAGES) {
+          const className = titleToClassName(album.folderName);
+          document
+            .querySelector("#card-" + className + " button")
+            .addEventListener("click", function (e) {
+              // open the first image
+              const items = album.files.map(
+                (f) => `./img/${album.folderName}/${f.filename}`,
+              );
+              SimpleLightbox.open({
+                items: items,
+              });
+            });
+        }
+      }
+
+      function buildFolder(folder, description, date, files) {
+        return {
+          folderName: folder,
+          description: description,
+          date: date,
+          files: files,
+        };
+      }
+
+      function buildImg(path, description) {
+        return { filename: path, description: description || "" };
+      }
+
+      const IMAGES = [
+        buildFolder("2025/02-snow", "Snow (Tahoe & Bozeman) ⛷️", "Jan 2025", [
+          buildImg("20250217_093427.jpg", ""),
+          buildImg("20250220_105347.jpg", ""),
+          buildImg("20250220_181532.jpg", ""),
+          buildImg("20250220_181635.jpg", ""),
+          buildImg("20250220_181844.jpg", ""),
+          buildImg("IMG_4769.jpeg", ""),
+          buildImg("IMG_4817.jpeg", ""),
+          buildImg("IMG_4874.jpeg", ""),
+          buildImg("IMG_4893.jpeg", ""),
+          buildImg("IMG_4914.jpeg", ""),
+          buildImg("IMG_4918.jpeg", ""),
+          buildImg("IMG_4922.jpeg", ""),
+          buildImg("IMG_4926.MOV", ""),
+        ]),
+        buildFolder("2025/014-bathtime", "Bathtime 🫧", "All year", [
+          buildImg("20251007_192806.jpg", ""),
+          buildImg("20251016_192851.jpg", ""),
+          buildImg("IMG_4839.jpeg", ""),
+        ]),
+        buildFolder(
+          "2025/03-progress-seminar",
+          "Lauren participates in San Mateo Progress Seminar",
+          "April 2025",
+          [
+            buildImg("IMG_6791.jpeg", ""),
+            buildImg("IMG_6797.jpeg", ""),
+            buildImg("20250503_132746.jpg", ""),
+            buildImg("20250503_135143.jpg", ""),
+            buildImg("20250503_135744.jpg", ""),
+          ],
+        ),
+        buildFolder("2025/01-i-love-dasher", "I 🖤 Dasher!", "Always", [
+          buildImg("4AD70AB9-29BF-4818-A4BE-FC82948D28CF.jpg", ""),
+          buildImg("IMG_5860.jpeg", ""),
+          buildImg("IMG_6444.jpeg ", ""),
+        ]),
+        buildFolder(
+          "2025/04-chris-and-aaron-and-holland",
+          "The Mills are back in town 🎶",
+          "May 2025",
+          [
+            buildImg("20250524_085516.jpg", ""),
+            buildImg("20250524_090247.jpg", ""),
+            buildImg("IMG_5287.jpeg", ""),
+            buildImg("IMG_5301.jpeg", ""),
+            buildImg("IMG_5598.jpeg", ""),
+            buildImg("IMG_5608.jpeg", ""),
+          ],
+        ),
+        buildFolder("2025/015-playtime", "Playtime!", "All year", [
+          buildImg("20250706_120135(0).jpg", ""),
+          buildImg("20250706_120144.jpg", ""),
+          buildImg("20250712_114700.jpg", ""),
+          buildImg("IMG_2827.jpeg", ""),
+          buildImg("IMG_2833.jpeg", ""),
+          buildImg("IMG_6293.jpeg", ""),
+        ]),
+        buildFolder("2025/016-pride", "Pride 🏳️‍🌈", "June 2025", [
+          buildImg("IMG_5370.jpeg", ""),
+          buildImg("IMG_5373.jpeg", ""),
+        ]),
+        buildFolder("2025/05-hawaii", "Hawaii 🏝️", "June 2025", [
+          buildImg("3394FC62-EB9A-4FC1-80B3-9A60F1A5F46C.jpeg", ""),
+          buildImg("20250615_192739~2.jpg", ""),
+          buildImg("20250617_092339.jpg", ""),
+          buildImg("20250617_092524.jpg", ""),
+          buildImg("20250617_102731.jpg", ""),
+          buildImg("20250617_102758.jpg", ""),
+          buildImg("20250617_133229.jpg", ""),
+          buildImg("20250617_162513.jpg", ""),
+          buildImg("IMG_3390.jpeg", ""),
+          buildImg("IMG_5402.jpeg", ""),
+          buildImg("IMG_5408.jpeg", ""),
+          buildImg("IMG_5412.jpeg", ""),
+          buildImg("IMG_5417.jpeg", ""),
+          buildImg("IMG_5421.jpeg", ""),
+          buildImg("IMG_5445.jpeg", ""),
+          buildImg("IMG_5447.jpeg", ""),
+          buildImg("IMG_5504.jpeg", ""),
+          buildImg("IMG_5509.jpeg", ""),
+          buildImg("IMG_5510.jpeg", ""),
+          buildImg("IMG_5513.jpeg", ""),
+          buildImg("IMG_5522.jpeg", ""),
+          buildImg("IMG_5528~2.jpg", ""),
+          buildImg("IMG_5528~3.jpg", ""),
+          buildImg("IMG_5529.jpeg", ""),
+          buildImg("IMG_5529~2.jpg", ""),
+          buildImg("IMG_5537.jpeg", ""),
+          buildImg("IMG_5546.jpeg", ""),
+          buildImg("IMG_5555.jpeg", ""),
+          buildImg("IMG_5557.jpeg", ""),
+          buildImg("IMG_5565.jpeg", ""),
+          buildImg("IMG_5567.jpeg", ""),
+        ]),
+        buildFolder("2025/06-tahoe-floating", "Tahoe Floating", "July 2025", [
+          buildImg("20250725_091133.jpg", ""),
+          buildImg("20250725_114732.jpg", ""),
+          buildImg("20250725_114742.jpg", ""),
+          buildImg("20250726_102707.jpg", ""),
+          buildImg("IMG_5673.jpeg", ""),
+          buildImg("IMG_5676.jpeg", ""),
+          buildImg("IMG_5681.jpeg", ""),
+          buildImg("IMG_5685.jpeg", ""),
+          buildImg("IMG_5692.jpeg", ""),
+        ]),
+        buildFolder("2025/07-birthday", "Birthday 🎂", "Aug 2025", [
+          buildImg("20250816_160433.jpg", ""),
+          buildImg("20250816_164915.jpg", ""),
+          buildImg("IMG_1537.jpeg", ""),
+          buildImg("IMG_1553.jpeg", ""),
+          buildImg("IMG_1557.jpeg", ""),
+          buildImg("IMG_1560.jpeg", ""),
+          buildImg("IMG_1566.jpeg", ""),
+          buildImg("IMG_1586.jpeg", ""),
+          buildImg("IMG_1611.jpeg", ""),
+          buildImg("IMG_8358.jpeg", ""),
+          buildImg("IMG_8359.jpeg", ""),
+          buildImg("IMG_8382.jpeg", ""),
+          buildImg("IMG_20250818_194442 (4).jpeg", ""),
+        ]),
+        buildFolder("2025/08-disneyland", "Disneyland 🎡", "Sept 2025", [
+          buildImg("20250904_085409.jpg", ""),
+          buildImg("20250904_105111.jpg", ""),
+          buildImg("20250904_192119.jpg", ""),
+          buildImg("20250905_084219.jpg", ""),
+          buildImg("20250906_111308.jpg", ""),
+          buildImg("20250906_173913(1).jpg", ""),
+          buildImg("20250906_180343.jpg", ""),
+          buildImg("311965912_HIGH.jpg", ""),
+          buildImg("311965940_HIGH.jpg", ""),
+          buildImg("IMG_5907.jpeg", ""),
+          buildImg("IMG_5915.jpeg", ""),
+          buildImg("IMG_5939.jpeg", ""),
+          buildImg("IMG_5941.jpeg", ""),
+          buildImg("IMG_5952.jpeg", ""),
+          buildImg("IMG_5956.jpeg", ""),
+          buildImg("IMG_5995.jpeg", ""),
+          buildImg("IMG_5998.jpeg", ""),
+          buildImg("IMG_6002.jpeg", ""),
+          buildImg("IMG_6013.jpeg", ""),
+          buildImg("IMG_6015.jpeg", ""),
+          buildImg("IMG_6019.jpeg", ""),
+          buildImg("IMG_6034.jpeg", ""),
+        ]),
+        buildFolder(
+          "2025/09-hiking-and-camping",
+          "Hiking and Camping 🏞️",
+          "Sept 2025",
+          [
+            buildImg("20250919_191056.jpg", ""),
+            buildImg("20250920_104324.jpg", ""),
+            buildImg("20250920_113833.jpg", ""),
+            buildImg("20250921_083549.jpg", ""),
+            buildImg("20250921_084231.jpg", ""),
+            buildImg("20250921_084258.jpg", ""),
+            buildImg("20250921_084310.jpg", ""),
+            buildImg("20250921_084434.jpg", ""),
+            buildImg("20250921_084552.jpg", ""),
+            buildImg("IMG_5902.jpeg", ""),
+            buildImg("IMG_5913.jpeg", ""),
+            buildImg("IMG_5920.jpeg", ""),
+            buildImg("IMG_5925.jpeg", ""),
+            buildImg("IMG_6086.jpeg", ""),
+            buildImg("IMG_6088.MOV", ""),
+            buildImg("IMG_6097.jpeg", ""),
+            buildImg("IMG_6109.jpeg", ""),
+            buildImg("IMG_6118.jpeg", ""),
+            buildImg("IMG_6213.jpeg", ""),
+            buildImg("IMG_6217.jpeg", ""),
+            buildImg("IMG_6476.jpg", ""),
+          ],
+        ),
+        buildFolder("2025/010-guys-trip", "Guys trip 🏎️", "Sept 2025", [
+          buildImg("20250927_184452.jpg", ""),
+          buildImg("20250928_112432.jpg", ""),
+          buildImg("20250928_120826.jpg", ""),
+          buildImg("20250929_102504.jpg", ""),
+          buildImg("20250929_102805.jpg", ""),
+          buildImg("20250930_112050.jpg", ""),
+          buildImg("IMG_7229.jpg", ""),
+          buildImg("IMG_20250928_160906 (1).jpeg", ""),
+          buildImg("IMG_20250930_185746 (16).jpeg", ""),
+          buildImg("IMG_20250930_185746.jpeg", ""),
+          buildImg("IMG_20250930_185748 (8).jpeg", ""),
+        ]),
+        buildFolder(
+          "2025/017-girls-trip",
+          "Girls trip while the boys are gone",
+          "Sept 2025",
+          [buildImg("IMG_6281.jpeg", "")],
+        ),
+        buildFolder("2025/011-chef", "Chef 👨‍🍳", "All year", [
+          buildImg("20251016_174850.jpg", ""),
+          buildImg("20251016_174906.jpg", ""),
+          buildImg("20251016_174913.jpg", ""),
+          buildImg("IMG_5738.jpeg", ""),
+        ]),
+        buildFolder("2025/012-new-bedroom", "New bedroom 🛏️", "Oct 2025", [
+          buildImg("20251026_200413.jpg", ""),
+          buildImg("20251029_200943.jpg", ""),
+          buildImg("20251029_200951.jpg", ""),
+          buildImg("20251102_131216.jpg", ""),
+        ]),
+        buildFolder("2025/013-halloween", "Halloween 🎃", "Oct 2025", [
+          buildImg("20251024_154410.jpg", ""),
+          buildImg("20251024_154552.jpg", ""),
+          buildImg("20251031_180701.jpg", ""),
+          buildImg("20251031_181532.jpg", ""),
+          buildImg("IMG_4959.jpeg", ""),
+          buildImg("IMG_4962.jpeg", ""),
+          buildImg("IMG_6350.jpeg", ""),
+        ]),
+        buildFolder("2025/018-family-photos", "Family Photos", "Nov 2025", [
+          buildImg("Lauren & Brendan 04.jpg", ""),
+          buildImg("Lauren & Brendan 05.jpg", ""),
+          buildImg("Lauren & Brendan 15.jpg", ""),
+          buildImg("Lauren & Brendan 17.jpg", ""),
+          buildImg("Lauren & Brendan 19.jpg", ""),
+          buildImg("Lauren & Brendan 23.jpg", ""),
+          buildImg("Lauren & Brendan 24.jpg", ""),
+          buildImg("Lauren & Brendan 25.jpg", ""),
+          buildImg("Lauren & Brendan 26.jpg", ""),
+          buildImg("Lauren & Brendan 30.jpg", ""),
+        ]),
+      ];
+
+      renderImages();
+    </script>
+  </body>
+</html>
