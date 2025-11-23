@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -31,10 +31,34 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link href="dist/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
 
     <style>
+      .hover-dropdown > div {
+        display: none;
+      }
+      .hover-dropdown:hover > div,
+      .hover-dropdown:focus > div {
+        display: block;
+      }
+      .hover-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hover-dropdown > div {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 15rem;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hover-dropdown > div > a {
+        display: block;
+        padding: 5px 10px;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -95,9 +119,23 @@
             <strong>Berman Family 2024</strong>
           </a>
           <span>
+            <a href="/2025" class="px-3 text-white">2025</a>
             <a href="#" class="px-3 text-white">2024</a>
             <a href="/2023" class="px-3 text-white">2023</a>
             <a href="/2022" class="px-3 text-white">2022</a>
+            <div id="older-photo-sites" class="hover-dropdown">
+              <span class="px-3 text-white">Past years ▼</span>
+              <div>
+                <a href="/2021" class="px-3 text-white">2021</a>
+                <a href="/2020" class="px-3 text-white">2020</a>
+                <a href="/donations2020" class="px-3 text-white"
+                  >Donations 2020</a
+                >
+                <a href="/2019" class="px-3 text-white">2019</a>
+                <a href="/2018" class="px-3 text-white">2018</a>
+                <a href="/2017" class="px-3 text-white">2017</a>
+              </div>
+            </div>
           </span>
         </div>
       </div>
@@ -151,7 +189,7 @@
         SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
         SimpleLightbox.defaults.beforeSetContent = function (
           contents,
-          lightboxThis
+          lightboxThis,
         ) {
           const iframe = contents.querySelector("iframe");
           if (!iframe) {
@@ -172,7 +210,10 @@
         let albumsHtml = "";
         for (let album of IMAGES) {
           const folder = album.folderName;
-          const description = album.description.replace(new RegExp('~~(.+)~~'), '<s>$1</s>');
+          const description = album.description.replace(
+            new RegExp("~~(.+)~~"),
+            "<s>$1</s>",
+          );
           const date = album.date ? album.date : "";
           const files = album.files;
           if (files.length === 0) {
@@ -208,7 +249,7 @@
             .addEventListener("click", function (e) {
               // open the first image
               const items = album.files.map(
-                (f) => `./img/${album.folderName}/${f.filename}`
+                (f) => `./img/${album.folderName}/${f.filename}`,
               );
               SimpleLightbox.open({
                 items: items,
@@ -218,15 +259,19 @@
       }
 
       function buildFolder(folder, description, date, files) {
-        return { folderName: folder, description: description, date: date, files: files}
+        return {
+          folderName: folder,
+          description: description,
+          date: date,
+          files: files,
+        };
       }
 
       function buildImg(path, description) {
-        return { filename: path, description: description || '' };
+        return { filename: path, description: description || "" };
       }
 
       const IMAGES = [
-
         buildFolder("2023_12_firehouse", "Firehouse visit", "Dec 2023", [
           buildImg("IMG_2066.heif.jpg", ""),
           buildImg("IMG_2110.heif.jpg", ""),
@@ -241,21 +286,26 @@
           buildImg("PXL_20240101_010832359.PORTRAIT_Original.jpg", ""),
         ]),
 
-        buildFolder("2024_01_swimming_and_zoo", "New Weekly Activities", "Q1 2024", [
-          buildImg("20240111_121858.jpg", ""),
-          buildImg("20240111_130608.jpg", ""),
-          buildImg("20240115_141259.jpg", ""),
-          buildImg("20240118_134233.jpg", ""),
-          buildImg("20240125_155047.jpg", ""),
-          buildImg("20240127_140637.jpg", ""),
-          buildImg("20240127_141207.jpg", ""),
-          buildImg("20240127_142734(0).jpg", ""),
-          buildImg("IMG_2590.heif.jpg", ""),
-          buildImg("IMG_2593.heif.jpg", ""),
-          buildImg("20240104_154145.jpg", ""),
-          buildImg("20240108_132734.jpg", ""),
-          buildImg("20240108_141934.jpg", ""),
-        ]),
+        buildFolder(
+          "2024_01_swimming_and_zoo",
+          "New Weekly Activities",
+          "Q1 2024",
+          [
+            buildImg("20240111_121858.jpg", ""),
+            buildImg("20240111_130608.jpg", ""),
+            buildImg("20240115_141259.jpg", ""),
+            buildImg("20240118_134233.jpg", ""),
+            buildImg("20240125_155047.jpg", ""),
+            buildImg("20240127_140637.jpg", ""),
+            buildImg("20240127_141207.jpg", ""),
+            buildImg("20240127_142734(0).jpg", ""),
+            buildImg("IMG_2590.heif.jpg", ""),
+            buildImg("IMG_2593.heif.jpg", ""),
+            buildImg("20240104_154145.jpg", ""),
+            buildImg("20240108_132734.jpg", ""),
+            buildImg("20240108_141934.jpg", ""),
+          ],
+        ),
 
         buildFolder("2024_02_food", "Trying real food", "Feb onwards", [
           buildImg("20240128_154904.jpg", ""),
@@ -291,30 +341,45 @@
           buildImg("IMG_3337.heif.jpg", ""),
         ]),
 
-        buildFolder("2024_05_gymnastics", "Gymnastic classes", "started in May", [
-          buildImg("20240526_083419.jpg", ""),
-          buildImg("20240526_084214.jpg", ""),
-          buildImg("20240526_084222(0).jpg", ""),
-          buildImg("20240526_085246.jpg", ""),
-          buildImg("20240609_084535.jpg", ""),
-        ]),
+        buildFolder(
+          "2024_05_gymnastics",
+          "Gymnastic classes",
+          "started in May",
+          [
+            buildImg("20240526_083419.jpg", ""),
+            buildImg("20240526_084214.jpg", ""),
+            buildImg("20240526_084222(0).jpg", ""),
+            buildImg("20240526_085246.jpg", ""),
+            buildImg("20240609_084535.jpg", ""),
+          ],
+        ),
 
-        buildFolder("2024_06_carmel_wedding", "Monterey & Carmel Wedding", "June 2024", [
-          buildImg("20240629_171745.jpg", ""),
-          buildImg("20240629_190628.jpg", ""),
-          buildImg("20240629_190735.jpg", ""),
-          buildImg("IMG_3499.heif.jpg", ""),
-          buildImg("IMG_3502.heif.jpg", ""),
-          buildImg("IMG_3503.heif.jpg", ""),
-          buildImg("IMG_3509.heif.jpg", ""),
-        ]),
+        buildFolder(
+          "2024_06_carmel_wedding",
+          "Monterey & Carmel Wedding",
+          "June 2024",
+          [
+            buildImg("20240629_171745.jpg", ""),
+            buildImg("20240629_190628.jpg", ""),
+            buildImg("20240629_190735.jpg", ""),
+            buildImg("IMG_3499.heif.jpg", ""),
+            buildImg("IMG_3502.heif.jpg", ""),
+            buildImg("IMG_3503.heif.jpg", ""),
+            buildImg("IMG_3509.heif.jpg", ""),
+          ],
+        ),
 
-        buildFolder("2024_07_giants_game", "Giants baseball game", "July 2024", [
-          buildImg("IMG_1262.heif.jpg", ""),
-          buildImg("IMG_1266.heif.jpg", ""),
-          buildImg("IMG_1281.heif.jpg", ""),
-          buildImg("IMG_3731.heif.jpg", ""),
-        ]),
+        buildFolder(
+          "2024_07_giants_game",
+          "Giants baseball game",
+          "July 2024",
+          [
+            buildImg("IMG_1262.heif.jpg", ""),
+            buildImg("IMG_1266.heif.jpg", ""),
+            buildImg("IMG_1281.heif.jpg", ""),
+            buildImg("IMG_3731.heif.jpg", ""),
+          ],
+        ),
 
         buildFolder("2024_08_birthday", "Parker 1st birthday", "Aug 2024", [
           buildImg("20240813_190635.jpg", ""),
@@ -370,7 +435,6 @@
           buildImg("IMG_4375.heif.jpg", ""),
           buildImg("IMG_4379.heif.jpg", ""),
         ]),
-
       ];
 
       renderImages();

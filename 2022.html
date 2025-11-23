@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -31,10 +31,34 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link href="dist/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="dist/simpleLightbox.min.css" />
 
     <style>
+      .hover-dropdown > div {
+        display: none;
+      }
+      .hover-dropdown:hover > div,
+      .hover-dropdown:focus > div {
+        display: block;
+      }
+      .hover-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hover-dropdown > div {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 15rem;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hover-dropdown > div > a {
+        display: block;
+        padding: 5px 10px;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -95,9 +119,23 @@
             <strong>Berman Family 2022</strong>
           </a>
           <span>
+            <a href="/2025" class="px-3 text-white">2025</a>
             <a href="/2024" class="px-3 text-white">2024</a>
             <a href="/2023" class="px-3 text-white">2023</a>
             <a href="#" class="px-3 text-white">2022</a>
+            <div id="older-photo-sites" class="hover-dropdown">
+              <span class="px-3 text-white">Past years ▼</span>
+              <div>
+                <a href="/2021" class="px-3 text-white">2021</a>
+                <a href="/2020" class="px-3 text-white">2020</a>
+                <a href="/donations2020" class="px-3 text-white"
+                  >Donations 2020</a
+                >
+                <a href="/2019" class="px-3 text-white">2019</a>
+                <a href="/2018" class="px-3 text-white">2018</a>
+                <a href="/2017" class="px-3 text-white">2017</a>
+              </div>
+            </div>
           </span>
         </div>
       </div>
@@ -151,7 +189,7 @@
         SimpleLightbox.defaults.videoRegex = new RegExp(/\.mov|\.mp4/);
         SimpleLightbox.defaults.beforeSetContent = function (
           contents,
-          lightboxThis
+          lightboxThis,
         ) {
           const iframe = contents.querySelector("iframe");
           if (!iframe) {
@@ -172,7 +210,10 @@
         let albumsHtml = "";
         for (let album of IMAGES) {
           const folder = album.folderName;
-          const description = album.description.replace(new RegExp('~~(.+)~~'), '<s>$1</s>');
+          const description = album.description.replace(
+            new RegExp("~~(.+)~~"),
+            "<s>$1</s>",
+          );
           const date = album.date ? album.date : "";
           const files = album.files;
           if (files.length === 0) {
@@ -208,7 +249,7 @@
             .addEventListener("click", function (e) {
               // open the first image
               const items = album.files.map(
-                (f) => `./img/${album.folderName}/${f.filename}`
+                (f) => `./img/${album.folderName}/${f.filename}`,
               );
               SimpleLightbox.open({
                 items: items,
@@ -235,7 +276,8 @@
         },
         {
           folderName: "2021_12_alabama",
-          description: "We visited Chris & Aaron in Alabama, then visited the southern coast of the US together",
+          description:
+            "We visited Chris & Aaron in Alabama, then visited the southern coast of the US together",
           date: "Dec 2021",
           files: [
             {
@@ -254,7 +296,8 @@
         },
         {
           folderName: "2022_1_birthday",
-          description: "Lauren's Birthday was celebraded with a home-cooked meal by the husbands & boyfriends of the ladies who attended",
+          description:
+            "Lauren's Birthday was celebraded with a home-cooked meal by the husbands & boyfriends of the ladies who attended",
           date: "Jan 2022",
           files: [
             {
@@ -289,7 +332,8 @@
         },
         {
           folderName: "2022_1_skiing",
-          description: "We did a quick January ski trip in Lake Tahoe. Dasher enjoyed the snow, and we enjoyed skiing at Northstar",
+          description:
+            "We did a quick January ski trip in Lake Tahoe. Dasher enjoyed the snow, and we enjoyed skiing at Northstar",
           date: "Jan 2022",
           files: [
             {
@@ -312,7 +356,8 @@
         },
         {
           folderName: "2022_2_colorado",
-          description: "We did a weeklong roadtrip out to Colorado for skiing! We pit stopped in Salt Lake City for a day of skiing on our way out :D",
+          description:
+            "We did a weeklong roadtrip out to Colorado for skiing! We pit stopped in Salt Lake City for a day of skiing on our way out :D",
           date: "Feb 2022",
           files: [
             {
@@ -382,7 +427,8 @@
         },
         {
           folderName: "2022_3_mendocino",
-          description: "Brendan's family visited town and we took a trip to Mendocino, a few hours north of SF along the coast",
+          description:
+            "Brendan's family visited town and we took a trip to Mendocino, a few hours north of SF along the coast",
           date: "Spring 2022",
           files: [
             {
@@ -409,7 +455,8 @@
         },
         {
           folderName: "2022_4_hawaii",
-          description: "We spent 2 weeks in Hawaii, with lots of hiking and lots of relaxing across two islands",
+          description:
+            "We spent 2 weeks in Hawaii, with lots of hiking and lots of relaxing across two islands",
           date: "April 2022",
           files: [
             {
@@ -629,7 +676,8 @@
         },
         {
           folderName: "2022_6_grand_canyon",
-          description: "We did a long weekend trip to the Grand Canyon - we backpacked down and stayed overnight in our tent at the bottom!",
+          description:
+            "We did a long weekend trip to the Grand Canyon - we backpacked down and stayed overnight in our tent at the bottom!",
           date: "June 2022",
           files: [
             {
@@ -719,7 +767,8 @@
         },
         {
           folderName: "2022_7_disney",
-          description: "Disneyland trip for the 50th aniversary of the Mainstreet Electrical Light Parade",
+          description:
+            "Disneyland trip for the 50th aniversary of the Mainstreet Electrical Light Parade",
           date: "Aug 2022",
           files: [
             {
@@ -758,7 +807,8 @@
         },
         {
           folderName: "2022_9_shows",
-          description: "We attended many plays & musicals this year, including Oklahoma, Moulin Rouge, To Kill a Mockingbird",
+          description:
+            "We attended many plays & musicals this year, including Oklahoma, Moulin Rouge, To Kill a Mockingbird",
           date: "Summer/Fall 2022",
           files: [
             {
